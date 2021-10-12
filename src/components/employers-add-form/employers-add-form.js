@@ -20,4 +20,4 @@ const EmployersAddForm = () => {
     )
 }
 
-export default EmployersAddForm
+export default EmployersAddForm;

@@ -10,6 +10,15 @@ import './app.css';
 
 
 function App() {
+
+    const data = [
+        {name: 'John C.', salary: 500, increase: false, id: 1},
+        {name: 'Alex B.', salary: 3000, increase: true, id: 2},
+        {name: 'Brown K.', salary: 5000, increase: false, id: 3},
+        
+
+    ]
+
     return(
         <div className='app'>
             <AppInfo/>
@@ -19,11 +28,15 @@ function App() {
                 <AppFilter/>
             </div>
 
-            <EmployersList/>
+            <EmployersList data={data}/>
             <EmployersAddForm/>
+
+            
             
         </div>
     )
 }
+
+
 
 export default  App;
